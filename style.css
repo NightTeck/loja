@@ -109,46 +109,7 @@ body{
 .logo p{
     font-size: 18px;
 }
-#relogio {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 32px;
-    font-weight: bold;
-    background: #000;
-    border: 3px solid;
-    border-radius: 15px;
-    letter-spacing: 3px;
-    animation: rgb 5s linear infinite;
-}
 
-@keyframes rgb {
-    0% {
-        color: #ff0000;
-        border-color: #ff0000;
-        box-shadow: 0 0 20px #ff0000;
-    }
-    25% {
-        color: #000000;
-        border-color: #000000;
-        box-shadow: 0 0 20px #000000;
-    }
-    50% {
-        color: #0000ff;
-        border-color: #0000ff;
-        box-shadow: 0 0 20px #0000ff;
-    }
-    75% {
-        color: #ff00ff;
-        border-color: #ff00ff;
-        box-shadow: 0 0 20px #ff00ff;
-    }
-    100% {
-        color: #000000;
-        border-color: #000000;
-        box-shadow: 0 0 20px #000000;
-    }
-}
 h1 {
     animation: rgb-text 5s linear infinite;
 }
