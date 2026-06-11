@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightTeck loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h1>NightTeck</h1>
+        
+        <div id="relogio-container">
+    <div id="relogio">00:00:00</div>
+    
+    <div class="pesquisa">
+    <input type="text" id="buscar" placeholder="🔍 Digite oque voce quer aqui...">
+</div>
+
+</div>
+    </div>
+</header>
+
+    <section class="produtos">
+
+        <div class="card produto">
+            <img src="img/produto1.jpg" alt="Produto">
+            <h3>Produto 1</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="" target="_blank">comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto2.jpg" alt="Produto">
+            <h3>Produto 2</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+        
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+
+        <div class="card produto">
+            <img src="img/produto3.jpg" alt="Produto">
+            <h3>Produto 3</h3>
+            <p>Descrição rápida do produto.</p>
+            <a href="#" target="_blank">Comprar 🔥</a>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <p>© 2026 Minha Loja - Todos os direitos reservados.</p>
+    </footer>
+
+  <script>
+let segundos = 0;
+
+function atualizarContador() {
+    segundos++;
+
+    const minutos = Math.floor(segundos / 60);
+    const segs = segundos % 60;
+
+    document.getElementById("relogio").textContent =
+        `${String(minutos).padStart(2, '0')}:${String(segs).padStart(2, '0')}`;
+}
+
+setInterval(atualizarContador, 50);
+</script>
+<script>
+const busca = document.getElementById("buscar");
+
+busca.addEventListener("keyup", function() {
+    const texto = busca.value.toLowerCase();
+    const produtos = document.querySelectorAll(".produto");
+
+    produtos.forEach(produto => {
+        const conteudo = produto.textContent.toLowerCase();
+
+        if (conteudo.includes(texto)) {
+            produto.style.display = "";
+        } else {
+            produto.style.display = "none";
+        }
+    });
+});
+</script>
+</body>
+</html>
