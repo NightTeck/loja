@@ -94,21 +94,7 @@
         <p>© 2026 Minha Loja - Todos os direitos reservados.</p>
     </footer>
 
-  <script>
-let segundos = 0;
 
-function atualizarContador() {
-    segundos++;
-
-    const minutos = Math.floor(segundos / 60);
-    const segs = segundos % 60;
-
-    document.getElementById("relogio").textContent =
-        `${String(minutos).padStart(2, '0')}:${String(segs).padStart(2, '0')}`;
-}
-
-setInterval(atualizarContador, 50);
-</script>
 <script>
 const busca = document.getElementById("buscar");
 
