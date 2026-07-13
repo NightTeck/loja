@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Perifericos | NightTeck</title>
+    <title>Acessorios | NightTeck</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -17,9 +17,9 @@
 
 <body>
 
-    <header>
+ <header>
 
-         <div class="logo">
+    <div class="logo">
         NIGHT<span>TECK</span>
     </div>
     <div class="search-box">
@@ -27,7 +27,8 @@
       <input
          type="text"
         id="searchInput"
-        placeholder="Pesquisar produtos em destaque...">
+        placeholder="Pesquisar acessorios..."
+>
 
         <button>
             🔍
@@ -35,33 +36,33 @@
 
     </div>
 
-   <div class="menu-mobile" onclick="abrirMenu()">
+    <div class="menu-mobile" onclick="abrirMenu()">
     ☰
 </div>
 
-<nav id="menu">
-    <a href="index.html">Início</a>
-    <a href="pc.gamer.html">Pc gamer</a>
-    <a href="perifericos.html">Periféricos</a>
-    <a href="pecas.html">peças</a>
-    <a href="home.html">Home e Teck</a>
-</nav>
+    <nav id="menu">
+        <a href="index.html">Início</a>
+        <a href="pc.gamer.html">Pc gamer</a>
+        <a href="perifericos.html">Periféricos</a>
+        <a href="pecas.html">peças</a>
+        <a href="home.html">Home e Tech</a>
+    </nav>
 
-    </header>
+</header>
 
     <section class="page-header">
 
-        <h1>Produtos Destaque</h1>
+        <h1>Acessorios</h1>
 
         <p>
-            Produtos mais vendidos desta semana.
+            Melhores acessorios para voce.
         </p>
 
     </section>
 
     <section class="product-grid">
 
-        <div class="card">
+        <div class="card produto">
 
             <img src="img/pc-warzone.jpg" alt="PC Gamer Warzone">
 
@@ -81,14 +82,14 @@
                    class="buy-btn"
                    target="_blank"
                    rel="noopener noreferrer">
-                   Ver Oferta
+                    Ver Oferta
                 </a>
 
             </div>
 
         </div>
 
-        <div class="card">
+        <div class="card produto">
 
             <img src="img/pc-fortnite.jpg" alt="PC Gamer Fortnite">
 
@@ -104,18 +105,18 @@
                     R$ 3.999
                 </span>
 
-                <a href="#" class="buy-btn"
+                <a href="#" class="buy-btn"]
                    class="buy-btn"
                    target="_blank"
                    rel="noopener noreferrer">
-                   Ver Oferta
+                    Ver Oferta
                 </a>
 
             </div>
 
         </div>
 
-        <div class="card">
+        <div class="card produto">
 
             <img src="img/pc-stream.jpg" alt="PC Gamer Streaming">
 
@@ -135,7 +136,7 @@
                    class="buy-btn"
                    target="_blank"
                    rel="noopener noreferrer">
-                   Ver Oferta
+                    Ver Oferta
                 </a>
 
             </div>
@@ -144,9 +145,9 @@
 
     </section>
 
-    <script src="script.js"></script>
-
-     <script>
+      <script src="script.js"></script> 
+     
+    <script>
 
 const searchInput = document.getElementById("searchInput");
 
@@ -170,6 +171,7 @@ searchInput.addEventListener("keyup", function () {
 
 });
 
+
 function abrirMenu() {
     const menu = document.getElementById("menu");
 
@@ -180,7 +182,6 @@ function abrirMenu() {
     }
 }
 </script>
-
 
 </body>
 
