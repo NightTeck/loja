@@ -1,114 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NightTeck loja</title>
+
+    <title>Perifericos | NightTeck</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
+
     <header>
-    <div class="logo">
-        <h1>NightTeck</h1>
-    
-    <div class="pesquisa">
-    <input type="text" id="buscar" placeholder="🔍 Digite oque voce quer aqui...">
-</div>
 
-</div>
+         <div class="logo">
+        NIGHT<span>TECK</span>
     </div>
-</header>
+    <div class="search-box">
 
-    <section class="produtos">
+      <input
+         type="text"
+        id="searchInput"
+        placeholder="Pesquisar produtos em destaque...">
 
-        <div class="card produto">
-            <img src="img/produto1.jpg" alt="Produto">
-            <h3>Produto 99</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="" target="_blank">comprar 🔥</a>
-        </div>
+        <button>
+            🔍
+        </button>
 
-        <div class="card produto">
-            <img src="img/produto2.jpg" alt="Produto">
-            <h3>Produto 2</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+    </div>
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
-        
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+   <div class="menu-mobile" onclick="abrirMenu()">
+    ☰
+</div>
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+<nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="pcgamer.html">Pc gamer</a>
+    <a href="perifericos.html">Periféricos</a>
+    <a href="acessorios.html">Acessórios</a>
+    <a href="home.html">Home e Teck</a>
+</nav>
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+    </header>
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+    <section class="page-header">
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
+        <h1>Produtos Destaque</h1>
 
-        <div class="card produto">
-            <img src="img/produto3.jpg" alt="Produto">
-            <h3>Produto 3</h3>
-            <p>Descrição rápida do produto.</p>
-            <a href="#" target="_blank">Comprar 🔥</a>
-        </div>
-        
+        <p>
+            Produtos mais vendidos desta semana.
+        </p>
 
     </section>
 
-    <footer>
-        <p>© 2026 Minha Loja - Todos os direitos reservados.</p>
-    </footer>
+    <section class="product-grid">
 
+        <div class="card">
 
-<script>
-const busca = document.getElementById("buscar");
+            <img src="img/pc-warzone.jpg" alt="PC Gamer Warzone">
 
-busca.addEventListener("keyup", function() {
-    const texto = busca.value.toLowerCase();
-    const produtos = document.querySelectorAll(".produto");
+            <div class="card-content">
+
+                <h3>PC Gamer Warzone</h3>
+
+                <p>
+                    Ryzen 7 5700X • RX 9060 XT • 32GB RAM
+                </p>
+
+                <span class="price">
+                    R$ 5.999
+                </span>
+
+                <a href="#" class="buy-btn"
+                   class="buy-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   Ver Oferta
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/pc-fortnite.jpg" alt="PC Gamer Fortnite">
+
+            <div class="card-content">
+
+                <h3>PC Gamer Fortnite</h3>
+
+                <p>
+                    Ryzen 5 • RTX • 16GB RAM
+                </p>
+
+                <span class="price">
+                    R$ 3.999
+                </span>
+
+                <a href="#" class="buy-btn"
+                   class="buy-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   Ver Oferta
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/pc-stream.jpg" alt="PC Gamer Streaming">
+
+            <div class="card-content">
+
+                <h3>PC Gamer Streaming</h3>
+
+                <p>
+                    Ryzen 9 • RTX • 64GB RAM
+                </p>
+
+                <span class="price">
+                    R$ 9.999
+                </span>
+
+                <a href="#" class="buy-btn"
+                   class="buy-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   Ver Oferta
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+     <script>
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    let filtro = searchInput.value.toLowerCase();
+
+    let produtos = document.querySelectorAll(".card");
 
     produtos.forEach(produto => {
-        const conteudo = produto.textContent.toLowerCase();
 
-        if (conteudo.includes(texto)) {
-            produto.style.display = "";
+        let nome = produto.textContent.toLowerCase();
+
+        if (nome.includes(filtro)) {
+            produto.style.display = "block";
         } else {
             produto.style.display = "none";
         }
+
     });
+
 });
+
+function abrirMenu() {
+    const menu = document.getElementById("menu");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
 </script>
+
+
 </body>
+
 </html>
